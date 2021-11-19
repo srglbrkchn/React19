@@ -4,27 +4,24 @@ var numbers = [3, 56, 2, 48, 5];
 // function double(x) {     return 2 * x; } const newNumbers = numbers.map(x =>
 // {     return 2 * x; }); console.log(newNumbers); let newNumbers = [];
 // numbers.forEach((number) => {     newNumbers.push(number
-// * 2); }); console.log(newNumbers);
+// * 2); }); console.log(newNumbers); Filter - Create a new array by keeping the
+// items that return true. const newNumbers =  numbers.filter((number) => {
+// if(number < 10){         return number;     } }); let newNumbers = [];
+// numbers.forEach(number => {     if(number >10) {
+// newNumbers.push(number);     } });
 
-// Filter - Create a new array by keeping the items that return true. 
 
-// const newNumbers =  numbers.filter((number) => {
-//     if(number < 10){
-//         return number;
-//     }
-// });
 
-let newNumbers = [];
+// Reduce - Accumulate a value by doing something to each item in an array. 
+
+let newNumber = 0;
 
 numbers.forEach(number => {
-    if(number >10) {
-        newNumbers.push(number);
-    }
+    newNumber += number;
 });
 
-console.log(newNumbers);
 
+// Find find the first item that matches from an array. FindIndex - find the index
+// of the first item that matches.
 
-// Reduce - Accumulate a value by doing something to
-// each item in an array. Find - find the first item that matches from an array.
-// FindIndex - find the index of the first item that matches.
+console.log(newNumber);
