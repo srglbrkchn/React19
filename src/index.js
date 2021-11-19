@@ -14,10 +14,17 @@ var numbers = [3, 56, 2, 48, 5];
 
 // Reduce - Accumulate a value by doing something to each item in an array. 
 
-let newNumber = 0;
+// let newNumber = 0;
 
-numbers.forEach(number => {
-    newNumber += number;
+// numbers.forEach(number => {
+//     newNumber += number;
+// });
+
+const newNumber = numbers.reduce((summation, currentNumb ) => {
+    console.log("Sum: " + summation);
+    console.log("Current number: " + currentNumb);
+
+    return summation += currentNumb;
 });
 
 
