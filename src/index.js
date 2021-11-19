@@ -14,7 +14,9 @@ function double(number) {
     newNumbers.push(number * 2);
 }
 
-numbers.forEach(double);
+numbers.forEach((number) =>  {
+    newNumbers.push(number * 2);
+});
 
 console.log(newNumbers);
 
