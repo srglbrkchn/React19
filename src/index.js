@@ -17,7 +17,7 @@ var numbers = [3, 56, 2, 48, 5];
 
 
 // Find find the first item that matches from an array.
-const newNumber = numbers.find(number =>{
+const newNumber = numbers.findIndex(number =>{
     if(number > 10){
         return number;
     }
